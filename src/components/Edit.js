@@ -37,7 +37,7 @@ const Edit = () => {
 
     const getdata = async()=>{
 
-        const res = await fetch(`/getuser/${id}`,{
+        const res = await fetch(`http://localhost:8003/getuser/${id}`,{
             method:"GET",
             headers:{
                 "Content-Type": "application/json"
@@ -65,7 +65,7 @@ const Edit = () => {
 
         const {name,email,work,add,mobile,desc,age} = inpval; 
 
-        const res2 =  await fetch(`/updateuser/${id}`,{
+        const res2 =  await fetch(`http://localhost:8003/updateuser/${id}`,{
             method:"PATCH",
             headers:{
                 "Content-Type": "application/json"

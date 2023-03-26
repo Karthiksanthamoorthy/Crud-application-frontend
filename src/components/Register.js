@@ -34,7 +34,7 @@ const Register = () => {
 
         const { name, email, work, add, mobile, desc, age } = inpval;
 
-        const res = await fetch("/register",{
+        const res = await fetch("http://localhost:8003/register",{
             method:"POST",
             headers:{
                 "Content-Type": "application/json"

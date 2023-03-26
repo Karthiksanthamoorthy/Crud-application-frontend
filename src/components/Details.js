@@ -16,7 +16,7 @@ const Details = () => {
 
     const getdata = async()=>{
 
-        const res = await fetch(`/getuser/${id}`,{
+        const res = await fetch(`http://localhost:8003/getuser/${id}`,{
             method:"GET",
             headers:{
                 "Content-Type": "application/json"
@@ -41,7 +41,7 @@ const Details = () => {
 
     const deleteuser = async (id)=>{
     
-        const res2 = await fetch(`/deleteuser/${id}`,{
+        const res2 = await fetch(`http://localhost:8003/deleteuser/${id}`,{
             method:"DELETE",
             headers:{
                 "Content-Type": "application/json"
