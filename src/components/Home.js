@@ -40,7 +40,7 @@ const Home = () => {
 
    const deleteuser = async (id)=>{
     
-    const res2 = await fetch(`http://localhost:8003/deleteuser/${id}`,{
+    const res2 = await fetch(`https://crud-backend-pag8.onrender.com/deleteuser/${id}`,{
         method:"DELETE",
         headers:{
             "Content-Type": "application/json"
